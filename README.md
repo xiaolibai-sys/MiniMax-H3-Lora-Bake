@@ -7,7 +7,7 @@ safetensors checkpoint.
 
 ## Requirements
 
-- Run with ComfyUI's bundled Python like:
+- Run with ComfyUI's bundled Python:
 
 ```powershell
 D:\ComfyUI-installs\ComfyUI\.venv\Scripts\python.exe bake_into_weights.py
@@ -55,3 +55,8 @@ For a LoRA already baked at strength 1.0, keep this at 1.0.
 5. Writes `weight`, `weight_scale`, and `comfy_quant` back in ComfyUI format.
 
 The output model is fixed: the LoRA cannot be toggled or re-scaled later.
+
+After all blocks are baked, the script prints `saving output...` before the
+final safetensors write. This stage can look stuck on slow disks because the
+serialized model is written in one pass; wait for the final `wrote <path>`
+message.
