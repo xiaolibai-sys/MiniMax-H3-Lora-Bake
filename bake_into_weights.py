@@ -847,8 +847,13 @@ def bake(cfg: BakeConfig) -> None:
     finally:
         reader.close()
 
+    print(
+        f"all blocks baked; saving output to {output} "
+        f"({time.time() - start:.1f}s elapsed)...",
+        flush=True,
+    )
     save_file(out_sd, str(output), metadata=metadata)
-    print(f"wrote {output} ({time.time() - start:.1f}s)")
+    print(f"wrote {output} ({time.time() - start:.1f}s)", flush=True)
 
 
 def main() -> None:
