@@ -7,10 +7,10 @@ safetensors checkpoint.
 
 ## Requirements
 
-- Run with ComfyUI's bundled Python:
+- Run with ComfyUI's bundled Python like:
 
 ```powershell
-D:\ComfyUI-installs\ComfyUI\ComfyUI\.venv\Scripts\python.exe bake_into_weights.py
+D:\ComfyUI-installs\ComfyUI\.venv\Scripts\python.exe bake_into_weights.py
 ```
 
 - A pruned MiniMax H3 base model, preferably the int8 convrot variant.
