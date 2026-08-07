@@ -1,0 +1,16 @@
+{
+  "base_model": "path/to/minimax_h3_fl2va_pruned_int8_convrot.safetensors",
+  "loras": [
+    {
+      "path": "path/to/complete_pruned_lora.safetensors",
+      "strength": 1.0
+    }
+  ],
+  "output": "path/to/baked_model.safetensors",
+  "device": "cuda",
+  "compute_dtype": "bfloat16",
+  "fold_dtype": "float32",
+  "convrot_groupsize": 256,
+  "comfy_root": "D:\\ComfyUI-installs\\ComfyUI\\ComfyUI",
+  "max_blocks": 0
+}

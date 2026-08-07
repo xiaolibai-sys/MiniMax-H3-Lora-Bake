@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.safetensors
+*.zip
+config.json
+output/
+reqiures comfy-kitchen.txt
+Run with ComfyUI's bundled Python.txt
